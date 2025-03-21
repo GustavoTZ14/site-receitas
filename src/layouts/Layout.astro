@@ -15,7 +15,7 @@ const {titulo} = Astro.props;
 	</head>
 	<body>
 		<header class="top">
-			<div><a href="/">Chefnacozinha.com</a></div>
+			<div class="top--logo"><a href="/">Chefnacozinha.com</a></div>
   		<form id="formulario">
     		<input type="text" id="inSearch" placeholder="Pesquise por Receitas">
     		<button type="submit" id="btSearch" class="botaoSearch">
@@ -55,6 +55,8 @@ const {titulo} = Astro.props;
 </html>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+
 	html,
 	body {
 		display: flex;
@@ -74,16 +76,21 @@ const {titulo} = Astro.props;
     align-items: center;
   }
 
-  .top a{
+  .top--logo a{
     text-decoration: none;
     color: #000000;
+    letter-spacing: 1px;
+    font-family: "Tangerine", cursive;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 35px;
   }
 
   #inSearch{
     width: 300px;
     height: 30px;
-    border: 1px solid #C0C0C0;
-    border-radius: 5px 0 0 5px;
+  border: 1px solid #C0C0C0;
+    border-radius: 5px;
     outline: none;
     padding-left: 10px;
     position: relative;
@@ -91,11 +98,11 @@ const {titulo} = Astro.props;
 
   .botaoSearch{
     position: absolute;
-    width: 35px;
+    width: 40px;
     height: 34px;
     outline: none;
     border: 1px solid #C0C0C0;
-    border-radius: 0 5px 5px 0;
+    border-radius: 5px;
   }
 
   #resultado{
@@ -107,16 +114,18 @@ const {titulo} = Astro.props;
     border: 1px solid #C0C0C0;
     border-radius: 5px;
     background-color: #ffffff;
-    padding: 5px;
-  }
-	.menu{
-    display: flex;
-    justify-content: center;
+  padding: 5px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
   }
 
- 	.menu ul{
+	.menu{
     display: flex;
-    gap: 30px;
+  justify-content: center;
+  }
+
+.menu ul{
+  display: flex;
+  gap: 30px;
  	}
 
   .menu li, a{
@@ -159,25 +168,33 @@ const {titulo} = Astro.props;
     .top{
       display: grid;
       justify-content: center;
+    }
+
+    .top--logo{
       text-align: center;
-    }
+      padding-bottom: 20px;
+  }
 
-    #inSearch{
-      border-radius: 5px;
-      margin: 20px;
-    }
-
-    .botaoSearch{
-      display: none;
-    }
-
-		.menu{
-      display: none;
-    }
-
+  #formulario{
+    position: relative;
+  }
+    
+  .botaoSearch{
+    position: absolute;
+    right: 0;
+  }
+	
     .menu ul{
-      display: none;
-    }
+    display: flex;
+    overflow-x: scroll;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .menu a{
+    display: inline-flex;
+    text-wrap: nowrap;
+  }
 
   }
 

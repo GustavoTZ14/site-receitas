@@ -14,6 +14,9 @@ const Options = {
 
 frm.addEventListener("submit", (e) => {
     e.preventDefault();
+
+    result.innerHTML = "";
+
     const campoSearch = document.getElementById("inSearch").value.trim();
 
     pesquisarDados(campoSearch);
@@ -24,16 +27,24 @@ function pesquisarDados(pesquisar) {
     const fuse = new Fuse(Dados, Options);
     const pesq = fuse.search(pesquisar);
 
-    let receitasResult = "";
 
     pesq.map(item => {
         const { titulo, link } = item.item;
 
-        receitasResult += `<li><a href=${link}>${titulo}</a></li>`
+        const liResult = document.createElement("li");
+        const linkResult = document.createElement("a");
+
+        liResult.style.padding = "10px 0"
+        linkResult.href = link;
+        linkResult.textContent = titulo;
+        linkResult.style.textDecoration = "none";
+        linkResult.style.color = "#000000";
+
+        result.appendChild(liResult);
+        liResult.appendChild(linkResult);
     })
 
-    result.innerHTML = receitasResult;
-    result.style.display = "block"
+    result.style.display = "block";
 }
 
 window.addEventListener("click", (e) => {
