@@ -1,0 +1,92 @@
+[
+    {
+        "titulo": "Frango Recheado com Agrião",
+        "categoria": "Pratos Principais",
+        "link": "/receitas/frango-recheado-com-agriao"
+    },
+    {
+        "titulo": "Porco com Maçãs",
+        "categoria": "Pratos Principais",
+        "link": "/receitas/porco-com-macas"
+    },
+    {
+        "titulo": "Espetinhos com Damasco",
+        "categoria": "Pratos Principais",
+        "link": "/receitas/espetinhos-com-damasco"
+    },
+    {
+        "titulo": "Robalo com Tomate ao Vinho Branco",
+        "categoria": "Pratos Principais",
+        "link": "/receitas/robalo-com-tomate-ao-vinho-branco"
+    },
+    {
+        "titulo": "Macarrão à Napolitana",
+        "categoria": "Pratos Principais",
+        "link": "/receitas/macarrao-a-napolitana"
+    },
+    {
+        "titulo": "Frango Frito no Forno",
+        "categoria": "Pratos Principais",
+        "link": "/receitas/frango-frito-no-forno"
+    },
+    {
+        "titulo": "Salada de Frango Crocante",
+        "categoria": "Pratos Principais",
+        "link": "/receitas/salada-de-frango-crocante"
+    },
+    {
+        "titulo": "Ensopado de Carne à Flamenga",
+        "categoria": "Pratos Principais",
+        "link": "/receitas/ensopado-de-carne-a-flamenga"
+    },
+    {
+        "titulo": "Folhados de Peru",
+        "categoria": "Pratos Principais",
+        "link": "/receitas/folhados-de-peru"
+    },
+    {
+        "titulo": "Frango Crocante",
+        "categoria": "Pratos Principais",
+        "link": "/receitas/frango-crocante"
+    },
+    {
+        "titulo": "Pescadinhas com Laranja",
+        "categoria": "Pratos Principais",
+        "link": "/receitas/pescadinhas-com-laranja"
+    },
+    {
+        "titulo": "Enrolado de Carne",
+        "categoria": "Pratos Principais",
+        "link": "/receitas/enrolado-de-carne"
+    },
+    {
+        "titulo": "Frango ao Limão no Forno",
+        "categoria": "Pratos Principais",
+        "link": "/receitas/frango-ao-limao-no-forno"
+    },
+    {
+        "titulo": "Bifes com Molho de Pimenta Verde",
+        "categoria": "Pratos Principais",
+        "link": "/receitas/bifes-com-molho-de-pimenta-verde"
+    },
+    {
+        "titulo": "Torta de Peixe",
+        "categoria": "Prato Principais",
+        "link": "/receitas/torta-de-peixe"
+    },
+    {
+        "titulo": "Cozido de Carne e Bolinhos",
+        "categoria": "Pratos Principais",
+        "link": "/receitas/cozido-de-carne-e-bolinhos"
+    },
+    {
+        "titulo": "Frango à Páprica",
+        "categoria": "Pratos Principais",
+        "link": "/receitas/frango-a-paprica"
+    },
+    {
+        "titulo": "Sardinhas Grelhadas",
+        "categoria": "Pratos Principais",
+        "link": "/receitas/sardinhas-grelhadas"
+    }
+]
