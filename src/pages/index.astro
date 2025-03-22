@@ -7,63 +7,63 @@ import CardReceitas from '../components/CardReceitas.astro';
 ---
 
 <Layout titulo="Chefnacozinha">
-      <h4 class="Top--title">Mais Acessadas</h4>
+      <h4 class="Top--title">Postados Recentes</h4>
       <section class="mid--secao">
         <CardReceitas
-          imagePath="/src/assets/imgReceitas1.webp"
-          altText="Frango recheado posto na mesa"
+          imagePath="/src/assets/bifes-com-molho-de-pimenta-verde.webp"
+          altText="Bifes ao molho"
           carregaImg="eager"
-          name="Frango Recheado com Agrião"
-          diretorio="/receitas/frango-recheado-com-agriao"
+          name="Bifes com Molho de Pimenta Verde"
+          diretorio="/receitas/bifes-com-molho-de-pimenta-verde"
         />
         <CardReceitas
-          imagePath="/src/assets/imgReceitas2.webp"
-          altText="mais uma receitas"
+          imagePath="/src/assets/cozido-de-carne-com-bolinhos.webp"
+          altText="uma tigela de carne"
           carregaImg="eager"
-          name="receitas"
-          diretorio="/receitas/"
+          name="Cozido de Carne com Bolinhos"
+          diretorio="/receitas/cozido-de-carne-com-bolinhos"
         /> 
         <CardReceitas
-          imagePath="/src/assets/imgReceitas2.webp"
-          altText="mais uma receitas"
+          imagePath="/src/assets/frango-ao-limao-no-forno.webp"
+          altText="frango assado com rodelas de limao"
           carregaImg="eager"
-          name="receitas"
-          diretorio="/receitas/"
+          name="Frango ao Limão no Forno"
+          diretorio="/receitas/frango-ao-limao-no-forno"
         />
         <CardReceitas
-          imagePath="/src/assets/imgReceitas2.webp"
-          altText="mais uma receitas"
+          imagePath="/src/assets/enrolado-de-carne.webp"
+          altText="carne de vaca enrolada e assada"
           carregaImg="eager"
-          name="receitas"
-          diretorio="/receitas/"
+          name="Enrolado de Carne"
+          diretorio="/receitas/enrolado-de-carne"
         />
         <CardReceitas
-          imagePath="/src/assets/imgReceitas2.webp"
-          altText="mais uma receitas"
+          imagePath="/src/assets/ensopado-de-carne-a-flamenga.webp"
+          altText="uma panela de sopa com carne"
           carregaImg="eager"
-          name="receitas"
-          diretorio="/receitas/"
+          name="Ensopado de Carne a Flamenga"
+          diretorio="/receitas/ensopado-de-carne-a-flamenga"
         />
         <CardReceitas
-          imagePath="/src/assets/imgReceitas2.webp"
-          altText="mais uma receitas"
+          imagePath="/src/assets/espetinhos-de-damasco.webp"
+          altText="espetinhos de carne"
           carregaImg="eager"
-          name="receitas"
-          diretorio="/receitas/"
+          name="Espetinhos de Damasco"
+          diretorio="/receitas/espetinhos-de-damasco"
         />
         <CardReceitas
-          imagePath="/src/assets/imgReceitas2.webp"
-          altText="mais uma receitas"
+          imagePath="/src/assets/folhados-de-peru.webp"
+          altText="salgado com recheio de peru"
           carregaImg="eager"
-          name="receitas"
-          diretorio="/receitas/"
+          name="Folhados de Peru"
+          diretorio="/receitas/folhados-de-peru"
         />
         <CardReceitas
-          imagePath="/src/assets/imgReceitas2.webp"
-          altText="mais uma receitas"
+          imagePath="/src/assets/frango-a-paprica.webp"
+          altText="frango com molho de paprica por cima"
           carregaImg="eager"
-          name="receitas"
-          diretorio="/receitas/"
+          name="Frango à Páprica"
+          diretorio="/receitas/frango-a-paprica"
         />
 
       </section>
@@ -72,6 +72,8 @@ import CardReceitas from '../components/CardReceitas.astro';
   .Top--title{
     text-align: center;
     margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
 
   .mid--secao{
@@ -79,7 +81,7 @@ import CardReceitas from '../components/CardReceitas.astro';
     flex-wrap: wrap;
     width: 90%;
     margin: auto;
-    padding: 50px 0 50px 0;
+    padding: 20px 0 50px 0;
     justify-content: center;
     gap: 10px;
   }

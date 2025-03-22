@@ -5,14 +5,12 @@ import { Image } from "astro:assets";
 interface props {
   imagePath: string;
   altText: string;
-  titulo: string;
   carregaImg: string;
 }
 
 const { 
   imagePath, 
   altText, 
-  titulo, 
   carregaImg
  }= Astro.props;
 
@@ -24,11 +22,9 @@ if(!images[imagePath]) throw new Error(
     `"${imagePath}" não existe no glob: "src/assets/*.{webp}`
 )
 ---
-<section class="secao">
   <div class="card">
     <Image src={images[imagePath]()} alt={altText} loading={carregaImg}/>
   </div>
-</section>
 <style>
 .card{
   width: 1000px;
@@ -45,11 +41,6 @@ if(!images[imagePath]) throw new Error(
 }
 
 @media (max-width: 950px) {
-  .secao{
-    display: grid;
-    flex: 1;
-  }
-
   .card{
     display: block;
     width: 90%;

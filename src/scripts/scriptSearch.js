@@ -34,7 +34,8 @@ function pesquisarDados(pesquisar) {
         const liResult = document.createElement("li");
         const linkResult = document.createElement("a");
 
-        liResult.style.padding = "10px 0"
+        liResult.style.padding = "10px 0";
+        liResult.style.listStyleType = "none";
         linkResult.href = link;
         linkResult.textContent = titulo;
         linkResult.style.textDecoration = "none";

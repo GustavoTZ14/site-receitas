@@ -1,12 +1,12 @@
 ---
 import LayoutReceitas from "../../layouts/LayoutReceitas.astro";
-import SecaoReceitas from "../../components/SecaoReceitas.astro";
+import ImgReceitas from "../../components/ImgReceitas.astro";
 ---
 
 <LayoutReceitas titulo="Frango Recheado com Agrião">
-    <SecaoReceitas
-        imagePath="/src/assets/imgReceitas1.webp"
-        altText="receitas"
+    <ImgReceitas
+        imagePath="/src/assets/frango-recheado-com-agriao.webp"
+        altText="frango recheado na mesa"
         carregaImg="eager"
     />
     <h3>Frango Recheado com Agrião</h3>
@@ -15,18 +15,61 @@ import SecaoReceitas from "../../components/SecaoReceitas.astro";
     </ul>
     <h4>Ingredientes</h4>
     <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+        <li>1 frango de 1 ½ kg, já limpo</li>
+        <li>1 xícara de caldo de galinha</li>
+        <li>1 cebola pequena, cortada em rodelas</li>
+        <li>1 maço de agrião</li>
+        <li>3 colheres (sopa) de salsinha picada</li>
+        <li>½ xícara de migalhas de pão fresco</li>
+        <li>suco e raspas de casca de ½ laranja média</li>
+        <li>uma pitada de noz-moscada</li>
+        <li>¼ xícara de passa sem semente</li>
+        <li>sal e pimenta-do-reino moída na hora</li>
     </ul>
+    <h4>Molho</h4>
+    <ul>
+        <li>2 xícaras de caldo de galinha</li>
+        <li>suco e raspas de casca de ½ laranja média</li>
+    </ul>
+    <h4>Preparo</h4>
+    <ol>
+        <li>Esquente o forno a 200ºC.</li>
+        <li>Ponha o caldo numa panela e deixe ferver. Junte a cebola, tampe e
+            cozinhe em fogo baixo durante 10min até ficar macia. Tire a tampa e 
+            cozinhe em fogo forte até que o líquido fique reduzido a ¹/3. Retire
+            do fogo.</li>
+        <li>Pique bem o agrião e misture com a cebola e o caldo. Junte a salsinha
+            as migalhas, as raspa e o suco de laranja, a noz-moscada e a passa.
+            Tempere com sal e a pimenta.</li>
+        <li>Recheie o frango com essa mistura, amarre as coxas e coloque-o sobre
+            uma grade dentro de uma assadeira.</li>
+        <li>Cubra com papel de alumínio, prendendo as bordas do papel por baixo
+            da grade. Asse por 1 hora. Retire o papel de alumínio e asse por mais 
+            20min até dourar. Tire o frango do forno e mantenha quente.</li>
+        <li>Prepare o molho: escorra a gordura da assadeira e coloque-a sobre o
+            fogo médio. Junte o caldo e deixe ferver, raspando o fundo da assadeira.</li>
+        <li>Junte as raspas e o suco de laranja e deixe em fogo baixo. Enquanto
+            isso, vá trinchando o frango.</li>
+        <li>Arrume as fatias de frango e o recheio numa travessa quente e sirva
+            o molho separado.</li>
+    </ol>
 </LayoutReceitas>
 <style>
+h3{
+    margin-top: 20px;
+    padding: 0 20px;
+}
+h4{
+    margin: 0;
+    padding: 0 20px;
+}
 
+ul li{
+    line-height: 30px;
+}
+
+ol li{
+    border-bottom: 1px solid #C0C0C0;
+    padding: 20px;
+}
 </style>
