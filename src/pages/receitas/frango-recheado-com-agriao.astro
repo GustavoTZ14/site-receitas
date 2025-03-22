@@ -1,14 +1,9 @@
 ---
 import LayoutReceitas from "../../layouts/LayoutReceitas.astro";
-import ImgReceitas from "../../components/ImgReceitas.astro";
+import "../../styles/styleReceitas.css"
 ---
 
 <LayoutReceitas titulo="Frango Recheado com Agrião">
-    <ImgReceitas
-        imagePath="/src/assets/frango-recheado-com-agriao.webp"
-        altText="frango recheado na mesa"
-        carregaImg="eager"
-    />
     <h3>Frango Recheado com Agrião</h3>
     <ul>
         <li>Cada Porção tem 415 calorias</li>
@@ -54,22 +49,3 @@ import ImgReceitas from "../../components/ImgReceitas.astro";
             o molho separado.</li>
     </ol>
 </LayoutReceitas>
-<style>
-h3{
-    margin-top: 20px;
-    padding: 0 20px;
-}
-h4{
-    margin: 0;
-    padding: 0 20px;
-}
-
-ul li{
-    line-height: 30px;
-}
-
-ol li{
-    border-bottom: 1px solid #C0C0C0;
-    padding: 20px;
-}
-</style>
