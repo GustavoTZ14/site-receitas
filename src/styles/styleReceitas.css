@@ -1,18 +1,45 @@
-h3 {
-  margin-top: 20px;
-  padding: 0 20px;
+.div--ingr {
+  display: block;
+  width: 100%;
+  padding: 10px;
 }
 
-h4 {
+.div--ingr ul {
   margin: 0;
-  padding: 0 20px;
+  padding: 0 0 0 10px;
 }
 
-ul li {
+.div--ingr li {
   line-height: 30px;
 }
 
-ol li {
+.div--preparo {
+  display: block;
+  width: 100%;
+  padding: 10px;
+}
+
+.div--preparo ol {
+  margin: 0;
+  padding: 0 0 0 10px;
+}
+
+.div--preparo li {
+  line-height: 30px;
   border-bottom: 1px solid #C0C0C0;
-  padding: 20px;
+  padding: 10px;
+}
+
+@media (max-width: 950px) {
+  .div--ingr {
+    width: 90%;
+    margin: auto;
+    border: 0;
+  }
+
+  .div--preparo {
+    width: 90%;
+    margin: auto;
+    border: 0;
+  }
 }

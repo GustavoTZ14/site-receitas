@@ -1,0 +1,46 @@
+---
+import CardReceitas from "../../components/CardReceitas.astro";
+import Layout from "../../layouts/Layout.astro";
+---
+<Layout titulo="Carnes">
+  <h4 class="Top--title">Carnes</h4>
+  <CardReceitas
+    imagePath="/src/assets/bifes-com-molho-de-pimenta-verde.webp"
+    altText="bifes com molho"
+    carregaImg="eager"
+    name="Bifes com Molho de Pimenta Verde"
+    diretorio="/receitas/bifes-com-molho-de-pimenta-verde"
+  />
+  <CardReceitas
+    imagePath="/src/assets/enrolado-de-carne.webp"
+    altText="enrolado de carne"
+    carregaImg="eager"
+    name="Enrolado de Carne"
+    diretorio="/receitas/enrolado-de-carne"
+  />
+  <CardReceitas
+    imagePath="/src/assets/espetinhos-de-damasco.webp"
+    altText="espetinhos de carne"
+    carregaImg="eager"
+    name="Espetinhos com Damasco"
+    diretorio="/receitas/espetinhos-com-damasco"
+  />
+</Layout>
+<style>
+  .Top--title{
+    text-align: center;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .mid--secao{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+    padding: 20px 0 50px 0;
+    justify-content: center;
+    gap: 10px;
+  }
+</style>
