@@ -10,6 +10,18 @@ const {titulo} = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/chef.svg" />
 		<meta name="description" content="Aprenda a cozinhar receitas deliciosas e fáceis com nosso site de receitas passo a passo.">
+		<script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=67e070ecf80bb90012168079&product=inline-share-buttons&source=platform" async="async"></script>
+		
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-M6GEZ3Z9CB"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-M6GEZ3Z9CB');
+    </script>
+
 		<meta name="generator" content={Astro.generator} />
 		<HeadTitle titulo={titulo}/>
 	</head>
@@ -23,7 +35,6 @@ const {titulo} = Astro.props;
       	</button>
     		<div id="resultado"></div>
   		</form>
-  		<script src="../scripts/scriptSearch.js"></script>
 		</header>
 		<aside class="menu">
 			<ul>
@@ -38,16 +49,18 @@ const {titulo} = Astro.props;
 		</aside>
 		<main class="mid">
 		  <section class="secao"><slot/></section>
+		  <div class="sharethis-inline-share-buttons"></div>
 		</main>
 		<footer class="bot">
 			<div class="bot--card">
     		<ul class="card--info">
-      		<li><a href="/politicas-de-privacidade">Politicas de Privacidade</a></li>
+      		<li><a href="/politica-de-privacidade">Politicas de Privacidade</a></li>
       		<li><a href="/termos-de-uso">Termos de Uso</a></li>
     		</ul>
     		<div class="bot--cp"><p>@Copyright (c) 2025 Chefnacozinha.com</p></div>
   		</div>
 		</footer>
+  	<script src="../scripts/scriptSearch.js"></script>
 	</body>
 </html>
 

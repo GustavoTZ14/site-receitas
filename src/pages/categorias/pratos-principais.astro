@@ -1,6 +1,7 @@
 ---
 import CardReceitas from "../../components/CardReceitas.astro";
 import Layout from "../../layouts/Layout.astro";
+import "../../styles/styleCategoria.css"
 ---
 
 <Layout titulo="Pratos Pricipais">
@@ -93,62 +94,44 @@ import Layout from "../../layouts/Layout.astro";
       <CardReceitas
       imagePath="/src/assets/pescadinhas-com-laranja.webp"
         altText="peixe com laranja"
-        carregaImg="eager"
+        carregaImg="lazy"
         name="Pescadinhas com Laranja"
       diretorio="/receitas/pescadinhas-com-laranja"
       />
       <CardReceitas
       imagePath="/src/assets/porco-com-macas.webp"
         altText="porco assado com maçãs"
-        carregaImg="eager"
+        carregaImg="lazy"
         name="Porco com Maçãs"
       diretorio="/receitas/porco-com-macas"
       />
       <CardReceitas
       imagePath="/src/assets/robalo-com-tomate-ao-vinho-branco.webp"
         altText="peixe robalo com vinho"
-        carregaImg="eager"
+        carregaImg="lazy"
         name="Robalo com Tomate ao Vinho Branco"
       diretorio="/receitas/robalo-com-tomate-ao-vinho-branco"
       />
       <CardReceitas
       imagePath="/src/assets/salada-de-frango-crocante.webp"
         altText="salada de frango"
-        carregaImg="eager"
+        carregaImg="lazy"
         name="Salada de Frango Crocante"
       diretorio="/receitas/salada-de-frango-crocante"
       />
       <CardReceitas
       imagePath="/src/assets/sardinhas-grelhadas.webp"
         altText="peixe sardinha grelhada"
-        carregaImg="eager"
+        carregaImg="lazy"
         name="Sardinhas Grelhadas"
       diretorio="/receitas/sardinhas-grelhadas"
       />
       <CardReceitas
       imagePath="/src/assets/torta-de-peixe.webp"
         altText="torta feita com peixe"
-        carregaImg="eager"
+        carregaImg="lazy"
         name="Torta de Peixe"
       diretorio="/receitas/torta-de-peixe"
       />
     </section>
 </Layout>
-<style>
-  .Top--title{
-    text-align: center;
-    margin-bottom: 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-
-  .mid--secao{
-    display: flex;
-    flex-wrap: wrap;
-    width: 90%;
-    margin: auto;
-    padding: 20px 0 50px 0;
-    justify-content: center;
-    gap: 10px;
-  }
-</style>

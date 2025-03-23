@@ -1,0 +1,24 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import CardReceitas from "../../components/CardReceitas.astro";
+import "../../styles/styleCategoria.css"
+---
+<Layout titulo="Massas">
+  <h4 class="Top--title">Massas</h4>
+  <section class="mid--secao">
+    <CardReceitas
+      imagePath="/src/assets/folhados-de-peru.webp"
+      altText="massas de folhados"
+      carregaImg="eager"
+      name="Folhados de Peru"
+      diretorio="/receitas/folhados-de-peru"
+    />
+    <CardReceitas
+      imagePath="/src/assets/macarrao-a-napolitana.webp"
+      altText="macarrao com molho napolitana"
+      carregaImg="eager"
+      name="Macarrão à Napolitana"
+      diretorio="/receitas/macarrao-a-napolitana"
+    />
+  </section>
+</Layout>

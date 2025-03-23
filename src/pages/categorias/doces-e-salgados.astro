@@ -1,0 +1,17 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import CardReceitas from "../../components/CardReceitas.astro";
+import "../../styles/styleCategoria.css"
+---
+<Layout titulo="Doces e Salgados">
+  <h4 class="Top--title">Doces e Salgados</h4>
+  <section class="mid--secao">
+    <CardReceitas
+      imagePath="/src/assets/folhados-de-peru.webp"
+      altText="salgado de peru"
+      carregaImg="eager"
+      name="Folhados de Peru"
+      diretorio="/receitas/folhados-de-peru"
+    />
+  </section>
+</Layout>

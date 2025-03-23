@@ -1,0 +1,17 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import CardReceitas from "../../components/CardReceitas.astro";
+import "../../styles/styleCategoria.css"
+---
+<Layout titulo="Saladas e Verduras">
+  <h4 class="Top--title">Saladas e Verduras</h4>
+  <section class="mid--secao">
+    <CardReceitas
+      imagePath="/src/assets/salada-de-frango-crocante.webp"
+      altText="salada de frango"
+      carregaImg="eager"
+      name="Salada de Frango Crocante"
+      diretorio="/receitas/salada-de-frango-crocante"
+    />
+  </section>
+</Layout>

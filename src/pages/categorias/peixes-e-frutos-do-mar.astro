@@ -1,0 +1,38 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import CardReceitas from "../../components/CardReceitas.astro";
+import "../../styles/styleCategoria.css"
+---
+<Layout titulo="Peixes e Frutos do Mar">
+  <h4 class="Top--title">Peixes e Frutos do Mar</h4>
+  <section class="mid--secao">
+    <CardReceitas
+      imagePath="/src/assets/pescadinhas-com-laranja.webp"
+      altText="peixe pescadinhas com laranja por cima"
+      carregaImg="eager"
+      name="Pescadinhas com Laranja"
+      diretorio="/receitas/pescadinhas-com-laranja"
+    />
+    <CardReceitas
+      imagePath="/src/assets/robalo-com-tomate-ao-vinho-branco.webp"
+      altText="peixe robalo com vinho branco"
+      carregaImg="eager"
+      name="Robalo com Tomate ao Vinho Branco"
+      diretorio="/receitas/robalo-com-tomate-ao-vinho-branco"
+    />
+    <CardReceitas
+      imagePath="/src/assets/sardinhas-grelhadas.webp"
+      altText="peixe sardinha grelhada"
+      carregaImg="eager"
+      name="Sardinhas Grelhadas"
+      diretorio="/receitas/sardinhas-grelhadas"
+    />
+    <CardReceitas
+      imagePath="/src/assets/torta-de-peixe.webp"
+      altText="torta feita com peixe"
+      carregaImg="eager"
+      name="Torta de Peixe"
+      diretorio="/receitas/torta-de-peixe"
+    />
+  </section>
+</Layout>

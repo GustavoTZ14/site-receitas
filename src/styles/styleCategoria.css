@@ -1,0 +1,16 @@
+.Top--title {
+  text-align: center;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.mid--secao {
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+  padding: 20px 0 50px 0;
+  justify-content: center;
+  gap: 10px;
+}

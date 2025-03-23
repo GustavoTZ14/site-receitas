@@ -1,0 +1,17 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import CardReceitas from "../../components/CardReceitas.astro";
+import "../../styles/styleCategoria.css"
+---
+<Layout titulo="Tortas">
+  <h4 class="Top--title">Tortas</h4>
+  <section class="mid--secao">
+    <CardReceitas
+      imagePath="/src/assets/torta-de-peixe.webp"
+      altText="torat feita de peixe"
+      carregaImg="eager"
+      name="Torta de Peixe"
+      diretorio="/receitas/torta-de-peixe"
+    />
+  </section>
+</Layout>
