@@ -30,6 +30,29 @@
   padding: 10px;
 }
 
+.div--outros {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Acompanhe {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.Acompanhe::before,
+.Acompanhe::after {
+  content: "";
+  flex-grow: 1;
+  height: 2px;
+  background-color: #C0C0C0;
+}
+
 @media (max-width: 950px) {
   .div--ingr {
     width: 90%;

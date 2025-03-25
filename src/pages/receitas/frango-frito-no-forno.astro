@@ -1,0 +1,85 @@
+---
+import LayoutReceitas from "../../layouts/LayoutReceitas.astro";
+import ImgReceitas from "../../components/ImgReceitas.astro";
+import "../../styles/styleReceitas.css";
+import CardReceitas from "../../components/CardReceitas.astro";
+---
+<LayoutReceitas titulo="Frango Frito no Forno">
+  <ImgReceitas
+    imagePath="/src/assets/frango-frito-no-forno.webp"
+    altText="frango frito"
+    carregaImg="lazy"
+  />
+  <div class="div--ingr">
+    <h3>Frango Frito no Forno</h3>
+    <p>Cada porção tem 410 calorias (ou 493 calorias, se você servir com banana
+      e bacon).</p>
+    <h4>Ingredientes</h4>
+    <ul>
+      <li>1 frango cortado em 4 partes</li>
+      <li>4 dentes de alho</li>
+      <li>3 colheres (sopa) de suco de limão</li>
+      <li>2 colheres (chá) de sal</li>
+      <li>2 colheres (sopa) de farinha de trigo</li>
+      <li>pimenta-do-reino a gosto</li>
+      <li>1 colher (chá) de gengibre ralado</li>
+      <li>raspas de casca de 1 limão</li>
+      <li>3 colheres (chá) de páprica doce</li>
+      <li>1 colher (chá) de molho de pimenta vermelha</li>
+      <li>1 colher (sopa) de óleo</li>
+      <li>1 colher (sopa) de manteiga</li>
+      <li>mais 1 colher (chá) de sal</li>
+    </ul>
+  </div>
+  <div class="div--preparo">
+    <h4>Preparo</h4>
+    <ol>
+      <li>Amasse o alho, o suco de limão e o sal para formar uma pasta.</li>
+      <li>
+        Faça corte não muito profundos nos pedaços de frango usando uma faca bem
+        afiada. Esfregue a pasta no frango. Deixe descansar, numa vasilha tampada,
+        em lugar fresco, por pelo menos 1 hora.
+      </li>
+      <li>Preaqueça o forno a 200ºC.</li>
+      <li>Misture a farinha, a pimenta-do-reino, o gengibre e as raspas.</li>
+      <li>
+        À parte, misture a páprica, o molho de pimenta e o sal e esfregue bem
+        o frango com esta mistura. Passe cada pedaço na mistura de farinha, de
+        modo que fiquem bem cobertos.
+      </li>
+      <li>
+        Esquente o óleo e a manteiga numa frigideira em fogo médio. Adicione o
+        frango e doure bem de todos os lados, tomando cuidado para não retirar
+        a cobertura.
+      </li>
+      <li>
+        Coloque numa fôrma refratária e leve ao forno, sem tampar, por 
+        aproximadamente 40 minutos, até o frango ficar macio. Sirva quente.
+      </li>
+    </ol>
+  </div>
+  <h4 class="Acompanhe">Acompanhe Também</h4>
+  <div class="div--outros">
+    <CardReceitas
+      imagePath="/src/assets/frango-crocante.webp"
+      altText="frango com textura crocante"
+      carregaImg="lazy"
+      name="Frango Crocante"
+      diretorio="/receitas/frango-crocante"
+    />
+    <CardReceitas
+      imagePath="/src/assets/bifes-com-molho-de-pimenta-verde.webp"
+      altText="bifes com molho"
+      carregaImg="lazy"
+      name="Bife com Molho de Pimenta Verde"
+      diretorio="/receitas/bifes-com-molho-de-pimenta-verde"
+    />
+    <CardReceitas
+      imagePath="/src/assets/pescadinhas-com-laranja.webp"
+      altText="peixe pescadinha com laranja por cima"
+      carregaImg="lazy"
+      name="Pescadinhas com Laranja"
+      diretorio="/receitas/pescadinhas-com-laranja"
+    />
+  </div>
+</LayoutReceitas>

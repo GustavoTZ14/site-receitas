@@ -1,0 +1,97 @@
+---
+import LayoutReceitas from "../../layouts/LayoutReceitas.astro";
+import ImgReceitas from "../../components/ImgReceitas.astro";
+import CardReceitas from "../../components/CardReceitas.astro";
+import "../../styles/styleReceitas.css"
+---
+<LayoutReceitas titulo="Ensopado de Carne à Flamenga">
+  <ImgReceitas
+    imagePath="/src/assets/ensopado-de-carne-a-flamenga.webp"
+    altText="ensopado de carne"
+    carregaImg="lazy"
+  />
+  <div class="div--ingr">
+    <h3>Ensopado de Carne à Flamenga</h3>
+    <p>Cada porção tem 842 calorias</p>
+    <h4>Ingredientes</h4>
+    <ul>
+      <li>800g de coxão duro, cortado em cubos de 2cm</li>
+      <li>3 colheres (sopa) de óleo</li>
+      <li>100g de bacon peicado</li>
+      <li>3 cebolas médias, cortadas em rodelas</li>
+      <li>1 dente de alho amassado (opcional)</li>
+      <li>3 colheres (sopa) de farinha de trigo</li>
+      <li>2 xícaras de cerveja preta</li>
+      <li>4 xícaras de caldo de carne</li>
+      <li>1 colher (sopa) de vinagre de vinho</li>
+      <li>1 colher (sopa) de açucar mascavo</li>
+      <li>1 amarrado de salsinha, tomilho e louro</li>
+      <li>sal e pimenta-do-reino</li>
+      <li>1 colher (sopa) de salsinha picada, para decorar</li>
+    </ul>
+    <h4>Torradas de Mostarda</h4>
+    <ul>
+      <li>2 fatias de pão de fôrma, sem as cascas, cortadas em 4 triângulos ou
+        quadrados</li>
+      <li>2 colheres (chá) de mostarda</li>
+      <li>óleo para fritar</li>
+    </ul>
+  </div>
+  <div class="div--preparo">
+    <h4>Preparo</h4>
+    <ol>
+      <li>
+        Esquente o óleo numa panela grande em fogo forte e frite a carne, aos
+        poucos, até dourar bem. Retire e mantenha a carne quente.
+      </li>
+      <li>
+        Diminua o fogo e frite o bacon e as cebolas durante 5 a 7 minutos, 
+        mexendo de vez em quando, até que as cebolas estejam macias e começando
+        a corar. Adicione o alho e frite por mais 1 minuto.
+      </li>
+      <li>
+        Adicione a farinha e mexa, raspando bem o fundo da panela. Cozinhe até
+        começar a corar e adicione a cerveja e 2 xícaras do caldo. Deixe ferver
+        mexendo sem parar. Recoloque a carne na panela e junte os demais 
+        ingredientes, exceto a salsinha. Mexa bem, diminua o fogo, tampe a panela
+        e cozinhe lentamente, juntando o restante do caldo à medida que for secando.
+      </li>
+      <li>
+        Enquanto isso, passe a mostarda nos dois lados dos pedaços de pão.
+      </li>
+      <li>
+        Esquente o óleo numa frigideira e frite os pedaços de pão por alguns 
+        segundos até dourarem.
+      </li>
+      <li>Coloque sobre papel absorvente</li>
+      <li>
+        Quando a carne estiver macia, experimente e corrija o tempero. Siva quente
+        decorada com a salsinha e as torradas.
+      </li>
+    </ol>
+  </div>
+  <h4 class="Acompanhe">Acompanhe Também</h4>
+  <div class="div--outros">
+    <CardReceitas
+      imagePath="/src/assets/sardinhas-grelhadas.webp"
+      altText="peixe sardinha grelhada"
+      carregaImg="lazy"
+      name="Sardinhas Grelhadas"
+      diretorio="/receitas/sardinhas-grelhadas"
+    />
+    <CardReceitas
+      imagePath="/src/assets/porco-com-macas.webp"
+      altText="lombo de porco com maçãs"
+      carregaImg="lazy"
+      name="Porco com Maçãs"
+      diretorio="/receitas/porco-com-macas"
+    />
+    <CardReceitas
+      imagePath="/src/assets/frango-a-paprica.webp"
+      altText="frango com molho de paprica"
+      carregaImg="lazy"
+      name="Frango à Páprica"
+      diretorio="/receitas/frango-a-paprica"
+    />
+  </div>
+</LayoutReceitas>

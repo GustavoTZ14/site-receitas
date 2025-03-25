@@ -1,0 +1,98 @@
+---
+import LayoutReceitas from "../../layouts/LayoutReceitas.astro";
+import ImgReceitas from "../../components/ImgReceitas.astro";
+import CardReceitas from "../../components/CardReceitas.astro";
+import "../../styles/styleReceitas.css";
+---
+<LayoutReceitas ttitulo="Salada de Frango Crocante">
+  <ImgReceitas
+    imagePath="/src/assets/salada-de-frango-crocante.webp"
+    altText="salada de frango"
+    carregaImg="lazy"
+  />
+  <div class="div--ingr">
+    <h3>Salada de Frango Crocante</h3>
+    <p>Cada porção tem 860 calorias.</p>
+    <h4>Ingredientes</h4>
+    <ul>
+      <li>2 peitos de frango cozidos e desossados</li>
+      <li>1 ½ xícara de arroz integral</li>
+      <li>3 xícaras de caldo de galinha</li>
+      <li>1 pimentão vermelho grande, cortado em pedaços pequenos</li>
+      <li>1 maço de cebolinha verde picada</li>
+      <li>200g (1 lata) de ervilha</li>
+      <li>½ xícara de cenoura ralada</li>
+      <li>½ xícara de noz picada</li>
+      <li>1 xícara de maionese</li>
+      <li>1 colher (sopa) de purê de tomate</li>
+      <li>¼ colher (chá de açucar)</li>
+      <li>1 colher (sopa) de salsinha picada (opcional)</li>
+    </ul>
+    <h4>Molho</h4>
+    <ul>
+      <li>2 colheres (sopa) de azeite de oliva</li>
+      <li>1 colher (sopa) de suco de limão</li>
+      <li>2 colheres (sopa) de vinagre de vinho ou vinho branco seco</li>
+      <li>uma pitada de mostarda em pó</li>
+      <li>sal e pimenta-do-reino</li>
+    </ul>
+  </div>
+  <div class="div--preparo">
+    <h4>Preparo</h4>
+    <ol>
+      <li>
+        Cozinhe o arroz integral no caldo de galinha durante 45min, ou até ficar
+        macio. Se necessário, junte água fervente no final do cozimento.
+      </li>
+      <li>
+        Enquanto isso, prepare o molho: coloque todos os Ingredientes num vidro
+        com tampa e agite bem.
+      </li>
+      <li>
+        Escorra o arroz e misture com pimentão vermelho, a cebolinha, a ervilha
+        e a cenoura.
+      </li>
+      <li>
+        Enquanto o arroz ainda estiver morno, misture com o molho. Cubra a 
+        vasilha com papel alumínio e deixe na geladeira durante 1 hora.
+      </li>
+      <li>
+        Antes de servir, junte a noz e misture bem. Coloque numa travessa e 
+        arrume o frango por cima.
+      </li>
+      <li>
+        Misture a maionese com o purê de tomate e o açucar. Deverá ficar com a
+        consistência de um molho. Se ficar muito duro, junte um pouquinho de 
+        água quente.
+      </li>
+      <li>
+        Com uma colher, coloque a maionese por cima do frango. Se quiser, 
+        polvilhe com salsinha picada.
+      </li>
+    </ol>
+  </div>
+  <h4 class="Acompanhe">Acompanhe Também</h4>
+  <div class="div--outros">
+    <CardReceitas
+      imagePath="/src/assets/enrolado-de-carne.webp"
+      altText="enrolado de carne"
+      carregaImg="lazy"
+      name="Enrolado de Carne"
+      diretorio="/receitas/enrolado-de-carne"
+    />
+    <CardReceitas
+      imagePath="/src/assets/frango-ao-limao-no-forno.webp"
+      altText="frango ao limão"
+      carregaImg="lazy"
+      name="Frango ao Limão no Forno"
+      diretorio="/receitas/frango-ao-limao-no-forno"
+    />
+    <CardReceitas
+      imagePath="/src/assets/frango-recheado-com-agriao.webp"
+      altText="frango recheado"
+      carregaImg="lazy"
+      name="Frango Recheado com Agrião"
+      diretorio="/receitas/frango-recheado-com-agriao"
+    />
+  </div>
+</LayoutReceitas>

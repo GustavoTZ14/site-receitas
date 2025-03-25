@@ -1,0 +1,72 @@
+---
+import LayoutReceitas from "../../layouts/LayoutReceitas.astro";
+import ImgReceitas from "../../components/ImgReceitas.astro";
+import "../../styles/styleReceitas.css";
+import CardReceitas from "../../components/CardReceitas.astro";
+---
+<LayoutReceitas titulo="Robalo com Tomate ao Vinho Branco">
+  <ImgReceitas
+    imagePath="/src/assets/robalo-com-tomate-ao-vinho-branco.webp"
+    altText="peixe robalo com vinho"
+    carregaImg="lazy"
+  />
+  <div class="div--ingr">
+    <h3>Robalo com Tomate ao Vinho Branco</h3>
+    <p>Cada porção tem 252 calorias</p>
+    <h4>Ingredientes</h4>
+    <ul>
+      <li>800 g de filé de robalo, cortado em 4 porções iguais</li>
+      <li>400 g de tomate</li>
+      <li>1 ½ colher (sopa) de manteiga</li>
+      <li>1 xícara de vinho branco</li>
+      <li>sal e pimenta-do-reino</li>
+      <li>2 colheres (sopa) de salsinha picada</li>
+      <li>1 colher (sopa) de coentro fresco picado ou 2 colheres (chá) de 
+        tomilho seco</li>
+    </ul>
+  </div>
+  <div class="div--preparo">
+    <h4>Preparo</h4>
+    <ol>
+      <li>Esquente o forno a 200ºC</li>
+      <li>Corte um dos tomates em 4 rodelas. Escalde, tire a pele e pique os
+        outros tomates.</li>
+      <li>Unte ligeiramente uma fôrma refratária com um pouco de manteiga. 
+        Coloque os tomates picados no fundo e arrume os filés por cima.</li>
+      <li>Coloque o vinho e o resto da manteiga numa panela pequena e leve ao
+        fogo baixo até derreter a manteiga. Derrame sobre o peixe.
+      </li>
+      <li>
+        Polvilhe com o sal, a pimenta, o coentro e a salsinha. Coloque uma rodela
+        de tomate sobre cada porção de robalo.
+      </li>
+      <li>
+        Asse no Forno durante 20 min ou até estar pronto. Sirva quente
+      </li>
+    </ol>
+  </div>
+  <h4 class="Acompanhe">Acompanhe Também</h4>
+  <div class="div--outros">
+    <CardReceitas
+      imagePath="/src/assets/frango-frito-no-forno.webp"
+      altText="frango frito feito no forno"
+      carregaImg="eager"
+      name="Frango Frito no Forno"
+      diretorio="/receitas/frango-frito-no-forno"
+    />
+    <CardReceitas
+      imagePath="/src/assets/cozido-de-carne-com-bolinhos.webp"
+      altText="cozindo de carne"
+      carregaImg="eager"
+      name="Cozido de Carne e Bolinhos"
+      diretorio="/receitas/cozido-de-carne-e-bolinhos"
+    />
+    <CardReceitas
+      imagePath="/src/assets/salada-de-frango-crocante.webp"
+      altText="salada de frango"
+      carregaImg="eager"
+      name="Salada de Frango Crocante"
+      diretorio="/receitas/salada-de-frango-crocante"
+    />
+  </div>
+</LayoutReceitas>

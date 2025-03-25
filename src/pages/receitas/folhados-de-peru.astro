@@ -1,0 +1,103 @@
+---
+import LayoutReceitas from "../../layouts/LayoutReceitas.astro";
+import ImgReceitas from "../../components/ImgReceitas.astro";
+import CardReceitas from "../../components/CardReceitas.astro";
+import "../../styles/styleReceitas.css"
+---
+<LayoutReceitas titulo="Folhados de Peru">
+  <ImgReceitas
+    imagePath="/src/assets/folhados-de-peru.webp"
+    altText="salgado de folhado com recheio de peru"
+    carregaImg="lazy"
+  />
+  <div class="div--ingr">
+    <h3>Folhados de Peru</h3>
+    <p>Cada porção tem 724 calorias.</p>
+    <h4>Ingredientes</h4>
+    <ul>
+      <li>300g de peito de peru</li>
+      <li>2 cebolas</li>
+      <li>1 cenoura média, cortada em quatro</li>
+      <li>2 folhas de louro</li>
+      <li>1 buquê garni</li>
+      <li>6 grãos de pimenta-do-reino preta</li>
+      <li>1 colher (sopa) de manteiga ou margarina</li>
+      <li>10 cogumelos fatiados</li>
+      <li>1 batata média, cozida em água com sal e cortada em cubinhos</li>
+      <li>200g (1 lata) de milho verde escorrido</li>
+      <li>sal e pimenta-do-reino</li>
+      <li>400g de massa folhada pronta descongelada</li>
+      <li>8 colheres (chá) de shoyu (molho de soja)</li>
+      <li>1 ovo batido para pincelar</li>
+      <li>chutney de manga para acompanhar (opcional)</li>
+    </ul>
+  </div>
+  <div class="div--preparo">
+    <h4>Preparo</h4>
+    <ol>
+      <li>
+        Coloque o peru numa panela. Adicione 1 cebola, a cenoura, as folhas de
+        louro, o buquê garni e os grãos de pimenta. Cubra com água fria, deixe
+        ferver e abaixe o fogo, cozinhando com a panela tampada, até o peru ficar
+        macio (de 30 a 45 minutos).
+      </li>
+      <li>
+        Pique a outra cebola. Derreta a manteiga numa frigideira em fogo médio.
+        Junte a cebola e o cogumelo e frite até a cebola ficar macia.
+      </li>
+      <li>
+        Retire o peru do caldo. Tire a pele e desfie a carne. Coe o caldo e deixe
+        reservado.
+      </li>
+      <li>
+        Misture o peru, a batata, a cebola, o cogumelo e o milho verde. Tempere
+        bem com sal e pimenta e umedeça a mistura com 2 a 3 colheres (sopa) do 
+        caldo reservado.
+      </li>
+      <li>
+        Preaqueça o forno a 200ºC. Molhe uma assadeira com água.
+      </li>
+      <li>
+        Corte a massa em 4 parte iguais. Abra cada pedaço, com o rolo, sobre um
+        tabuleiro polvilhado com farinha de trigo, até formar um quadrado. Corte
+        um círculo de 15 a 20cm de diâmentro em cada quadrado. Coloque ¼ da 
+        mistura de peru no meio de cada círculo e 2 colheres (chá) de chutney de
+        manga por cima.
+      </li>
+      <li>
+        Pincele a borda de cada círculo com água fria e dobre a massa ao meio,
+        junstando as bordas sobre o recheio. Pressione os lados, para fechar 
+        bem. Separe delicadamente as bordas da massa por cima do recheio.
+      </li>
+      <li>
+        Coloque os folhados na assadeira e pincele com o ovo. Deixe assar durante
+        20 min ou até que os folhados estejam dourados. Sirva quente ou frio,
+        como preferir, acompanhados do chutney de manga.
+      </li>
+    </ol>
+  </div>
+  <h4 class="Acompanhe">Acompanhe Também</h4>
+  <div class="div--outros">
+    <CardReceitas
+      imagePath="/src/assets/espetinhos-de-damasco.webp"
+      altText="espetinhos de carne"
+      carregaImg="lazy"
+      name="Espetinhos com Damasco"
+      diretorio="/receitas/espetinhos-com-damasco"
+    />
+    <CardReceitas
+      imagePath="/src/assets/cozido-de-carne-com-bolinhos.webp"
+      altText="cozido de carne"
+      carregaImg="lazy"
+      name="Cozido de Carne e Bolinhos"
+      diretorio="/receitas/cozido-de-carne-e-bolinhos"
+    />
+    <CardReceitas
+      imagePath="/src/assets/robalo-com-tomate-ao-vinho-branco.webp"
+      altText="Peixe robalo com vinho"
+      carregaImg="lazy"
+      name="Robalo com Tomate ao Vinho Branco"
+      diretorio="/receitas/robalo-com-tomate-ao-vinho-branco"
+    />
+  </div>
+</LayoutReceitas>

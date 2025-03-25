@@ -1,0 +1,74 @@
+---
+import LayoutReceitas from "../../layouts/LayoutReceitas.astro";
+import ImgReceitas from "../../components/ImgReceitas.astro";
+import "../../styles/styleReceitas.css";
+import CardReceitas from "../../components/CardReceitas.astro";
+---
+<LayoutReceitas titulo="Espetinhos com Damasco">
+  <ImgReceitas
+    imagePath="/src/assets/espetinhos-de-damasco.webp"
+    altText="espetinhos de carne"
+    carregaImg="lazy"
+  />
+  <div class="div--ingr">
+    <h3>Espetinhos com Damasco</h3>
+    <p>Cada porção tem 560 calorias.</p>
+    <h4>Ingredientes</h4>
+    <ul>
+      <li>½ kg de carne magra (filé mignon, contrafilé)</li>
+      <li>2 xícaras de iogurte natural</li>
+      <li>1 colher (chá) de hortelã seca ou 1 colher (sopa) de hortelã freca picada</li>
+      <li>2 colheres (chá) de suco de limão</li>
+      <li>sal e pimenta-do-reino</li>
+      <li>16 damascos secos, deixados de molho na véspera e escorridos</li>
+      <li>3 cebolas pequenas, cortadas em quatro</li>
+      <li>400 g de abobrinha pequena</li>
+      <li>óleo para pincelar a abobrinha</li>
+    </ul>
+  </div>
+  <div class="div--preparo">
+    <h4>Preparo</h4>
+    <ol>
+      <li>Corte a carne em cubos pequenos. Misture o iogurte, a hortelã e o suco
+        de limão. Tempere com sal e pimenta a gosto. Coloque a carne numa 
+        vasilha e despeje o tempero de iogurte, misturando bem para cobrir todos
+        os cubos. Cubra com papel de alumínio e deixe na geladeira por, no 
+        mínimo, 6 horas (se preferir, pode deixar até 2 dias).</li>
+      <li>Escorra o excesso de iogurte. Corte os damascos ao meio. Separe as
+        cebolas em camadas.</li>
+      <li>Monte os espetinhos (1 ou 2 por pessoa) alternando a carne, o damasco
+        e a cebola. Coloque os espetinhos na parte mais alta do forno, sobre
+        uma grade, tendo o cuidado de pôr uma assadeira embaixo para aparar o 
+        líquido. Asse em temperatura média por aproximadamente 30 minutos,
+        virando para assar por igual.</li>
+      <li>Enquanto isso, corte as abobrinhas em rodelas de cerca de 2cm e escalde
+        em água fervente com sal por 1 minuto. Escorra e coloque as rodelas em
+        espetinhos. Pincele com óleo e asse em fogo forte durante 5 minutos até
+        dourar por igual. Sirva com os espetinhos.</li>
+    </ol>
+  </div>
+  <h4 class="Acompanhe">Acompanhe Também</h4>
+  <div class="div--outros">
+    <CardReceitas
+      imagePath="/src/assets/robalo-com-tomate-ao-vinho-branco.webp"
+      altText="peixe robalo com vinho"
+      carregaImg="eager"
+      name="Robalo com Tomate ao Vinho Branco"
+      diretorio="/receitas/robalo-com-tomate-ao-vinho-branco"
+    />
+    <CardReceitas
+      imagePath="/src/assets/frango-a-paprica.webp"
+      altText="frango com molho de paprica"
+      carregaImg="eager"
+      name="Frango à Páprica"
+      diretorio="/receitas/frango-a-paprica"
+    />
+    <CardReceitas
+      imagePath="/src/assets/macarrao-a-napolitana.webp"
+      altText="macarrão"
+      carregaImg="eager"
+      name="Macarrão à Napolitana"
+      diretorio="/receitas/macarrao-a-napolitana"
+    />
+  </div>
+</LayoutReceitas>

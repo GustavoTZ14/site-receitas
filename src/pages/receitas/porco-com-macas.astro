@@ -1,0 +1,79 @@
+---
+import LayoutReceitas from "../../layouts/LayoutReceitas.astro";
+import ImgReceitas from "../../components/ImgReceitas.astro";
+import "../../styles/styleReceitas.css";
+import CardReceitas from "../../components/CardReceitas.astro";
+---
+<LayoutReceitas titulo="Porco com Maçãs">
+  <ImgReceitas
+    imagePath="/src/assets/porco-com-macas.webp"
+    altText="porco assado com maçãs"
+    carregaImg="lazy"
+  />
+  <div class="div--ingr">
+    <h3>Porco com Maçãs</h3>
+    <p>Cada porção tem 655 calorias.</p>
+    <h4>Ingredientes</h4>
+    <ul>
+      <li>1 kg a 1 ½ kg de Lombo de porco</li>
+      <li>4 colheres (sopa) de vinho branco seco</li>
+      <li>2 xícaras de geléia de amora</li>
+      <li>½ kg de maçã, decascada e cortada em rodelas finas</li>
+      <li>2 colheres (chá) de sálvia seca</li>
+      <li>sal e pimenta-do-reino</li>
+      <li>óleo para fritar o torresmo</li>
+    </ul>
+  </div>
+  <div class="div--preparo">
+    <h4>Preparo</h4>
+    <ol>
+      <li>Coloque o vinho e a geléia numa panela e esquente devagar até que a
+        geléia comece a derreter. Acicione as maçãs em rodelas finas e cozinhe
+        por 10 a 15 minutos até ficarem macias. Bata no liquidificador até formar
+        um purê. Deixe esfriar.</li>
+      <li>Equanto isso, tire a pele do lombo de porco e reserve. Calcule 30min
+        de cozimento para cada ½ kg, e mais 30min no total.</li>
+      <li>Espalhe a sálvia sobre a carne e tempere com sal e pimenta. Coloque a
+        carne num prato fundo e despeje o purê de maçã por cima. Cubra com papel
+        alumínio e deixe no refrigerador por 3 a 4 horas.</li>
+      <li>Esquente o forno a 200ºC.</li>
+      <li>Retire a carne do prato (sem tirar o purê que fica grudado na gordura)
+        e peneire o purê. Coloque a carne numa assadeira e asse pelo tempo
+        calculado. Cubra com papel aluminio depois de 30 a 45min. Coloque a pele
+        numa assadeira. Polvilhe com sal e besunte com óleo para fazer o 
+        torresmo. Cerca de 30min antes do lombo ficar pronto, coloque a assadeira
+        com a pele na parte mais alta do forno. Escorra o excesso de gordura,
+        à medida que for assando, para que fique bem crocante.</li>
+      <li>Quando o lombo estiver pronto (o suco deve sair transparente quando a
+        carne for espetada com um garfo), coloque-o numa travessa aquecida com o
+        torresmo e mantenha aquecido no forno em fogo baixo.</li>
+      <li>Escorra a gordura da assadeira e coloque-a sobre o fogo. Adicione o 
+        purê reservado e esquente bem, mexendo sem parar. Coloque numa molheira
+        e sirva acompanhando o lombo e o torresmo.</li>
+    </ol>
+  </div>
+  <h4 class="Acompanhe">Acompanhe Também</h4>
+  <div class="div--outros">
+    <CardReceitas
+      imagePath="/src/assets/frango-recheado-com-agriao.webp"
+      altText="frango recheado assado"
+      carregaImg="eager"
+      name="Frango Recheado com Agrião"
+      diretorio="/receitas/frango-recheado-com-agriao"
+    />
+    <CardReceitas
+      imagePath="/src/assets/espetinhos-de-damasco.webp"
+      altText="espetinhos de carne"
+      carregaImg="eager"
+      name="Espetinhos com Damasco"
+      diretorio="/receitas/espetinhos-com-damasco"
+    />
+    <CardReceitas
+      imagePath="/src/assets/sardinhas-grelhadas.webp"
+      altText="peixe sardinha grelhada"
+      carregaImg="eager"
+      name="Sardinhas Grelhadas"
+      diretorio="/receitas/sardinhas-grelhadas"
+    />
+  </div>
+</LayoutReceitas>

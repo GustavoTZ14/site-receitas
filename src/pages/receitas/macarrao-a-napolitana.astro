@@ -1,0 +1,73 @@
+---
+import LayoutReceitas from "../../layouts/LayoutReceitas.astro";
+import ImgReceitas from "../../components/ImgReceitas.astro";
+import "../../styles/styleReceitas.css";
+import CardReceitas from "../../components/CardReceitas.astro";
+---
+<LayoutReceitas titulo="Macarrão à Napolitana">
+  <ImgReceitas
+    imagePath="/src/assets/macarrao-a-napolitana.webp"
+    altText="macarrão"
+    carregaImg="lazy"
+  />
+  <div class="div--ingr">
+    <h3>Macarrão à Napolitana</h3>
+    <p>Cada porção tem 548 calorias</p>
+    <h4>Ingredientes</h4>
+    <ul>
+      <li>250 g (½ pacote) de macarrão ninho largo</li>
+      <li>1 colher (sopa) de óleo</li>
+      <li>1 cebola grande bem picada</li>
+      <li>200 g de cogumelo</li>
+      <li>200 g de bacon picado</li>
+      <li>3 talos de aipo (salsão) picados</li>
+      <li>1 dente de alho grande amassado(opcional)</li>
+      <li>2 colheres (sopa) de purê de tomate</li>
+      <li>¾ xícara de caldo de galinha</li>
+      <li>1 colher (chá) de orégano</li>
+      <li>sal e pimenta-do-reino</li>
+      <li>1 colher (sopa) de manteiga</li>
+      <li>1 colher (sopa) de queijo parmesão ralado</li>
+    </ul>
+  </div>
+  <div class="div--preparo">
+    <h4>Preparo</h4>
+    <ol>
+      <li>Esquente o óleo numa frigideira em fogo médio. Adicione a cebola, os
+        cogumelos, os bacon e o aipo e frite por 3 minutos, mexendo de vez em
+        quando.</li>
+      <li>Adicione o alho, purê de tomate, o caldo e o orégano. Tempere com sal
+        e pimenta a gosto, diminua o fogo e cozinhe por mais 5 minutos até 
+        engrossar.</li>
+      <li>Cozinhe o macarrão em bastante água fervente com sal durante 5min, ou
+        até ficar cozido. Escorra o macarrão e coloque novamente na panela 
+        enxaguada. Junte a manteiga e misture.</li>
+      <li>Coloque o macarrão numa travessa aquecida e depeje o molho por cima.
+        Polvilhe com o queijo ralado e sirva imediatamente.</li>
+    </ol>
+  </div>
+  <h4 class="Acompanhe">Acompanhe Também</h4>
+  <div class="div--outros">
+    <CardReceitas
+      imagePath="/src/assets/ensopado-de-carne-a-flamenga.webp"
+      altText="ensopado de carne"
+      carregaImg="eager"
+      name="Ensopado de Carne à Flamenga"
+      diretorio="/receitas/ensopado-de-carne-a-flamenga"
+    />
+    <CardReceitas
+      imagePath="/src/assets/torta-de-peixe.webp"
+      altText="torta feixo com peixe"
+      carregaImg="eager"
+      name="Torta de Peixe"
+      diretorio="/receitas/torta-de-peixe"
+    />
+    <CardReceitas
+      imagePath="/src/assets/folhados-de-peru.webp"
+      altText="salgado com recheio de peru"
+      carregaImg="eager"
+      name="Folhados de Peru"
+      diretorio="/receitas/folhados-de-peru"
+    />
+  </div>
+</LayoutReceitas>
