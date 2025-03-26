@@ -1,0 +1,68 @@
+---
+import LayoutReceitas from "../../layouts/LayoutReceitas.astro";
+import ImgReceitas from "../../components/ImgReceitas.astro";
+import CardReceitas from "../../components/CardReceitas.astro";
+import "../../styles/styleReceitas.css";
+---
+<LayoutReceitas titulo="Sardinhas Grelhadas">
+  <ImgReceitas
+    imagePath="/src/assets/sardinhas-grelhadas.webp"
+    altText="sardinhas"
+    carregaImg="eager"
+  />
+  <div class="div--ingr">
+    <h3>Sardinhas Grelhadas</h3>
+    <p>Cada porção tem 185 calorias.</p>
+    <h4>Ingredientes</h4>
+    <ul>
+      <li>4 sardinhas médias</li>
+      <li>sal e pimenta-do-reino a gosto</li>
+      <li>3 colheres (sopa) de suco de limão</li>
+      <li>1 colher (chá) de alcaravia</li>
+    </ul>
+  </div>
+  <div class="div--preparo">
+    <h4>Preparo</h4>
+    <ol>
+      <li>
+        Lave as sardinhas e seque. Faça 3 cortes em diagonal na pele de um dos
+        lados de cada sardinha.
+      </li>
+      <li>
+        Esquente a grelha em temperatura moderada. Tempere as sardinhas com o
+        sal e a pimenta. Respingue a parte de dentro com um pouco do suco de 
+        limão e coloque na grelha, com a parte cortada para cima. Respingue com
+        mais suco de limão e polvilhe com metade da alcaravia.
+      </li>
+      <li>
+        Grelhe as sardinhas durante 5 minutos, vire e respingue com o restante 
+        do suco de limão e da alcaravia. Grelhe durante mais 5min e coloque 
+        sobre uma travessa aquecida. Sirva imediatamente.
+      </li>
+    </ol>
+  </div>
+  <h4 class="Acompanhe">Acompanhe Também</h4>
+  <div class="div--outros">
+    <CardReceitas
+      imagePath="/src/assets/frango-a-paprica.webp"
+      altText="frango com molho"
+      carregaImg="lazy"
+      name="Frango à Páprica"
+      diretorio="/receitas/frango-a-paprica"
+    />
+    <CardReceitas
+      imagePath="/src/assets/pescadinhas-com-laranja.webp"
+      altText="peixe pescadinha com laranja por cima"
+      carregaImg="lazy"
+      name="Pescadinhas com Laranja"
+      diretorio="/receitas/pescadinhas-com-laranja"
+    />
+    <CardReceitas
+      imagePath="/src/assets/folhados-de-peru.webp"
+      altText="folhados"
+      carregaImg="lazy"
+      name="Folhados de Peru"
+      diretorio="/receitas/folhado-de-peru"
+    />
+  </div>
+</LayoutReceitas>

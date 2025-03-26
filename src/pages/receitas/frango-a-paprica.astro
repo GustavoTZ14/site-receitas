@@ -1,0 +1,82 @@
+---
+import LayoutReceitas from "../../layouts/LayoutReceitas.astro";
+import ImgReceitas from "../../components/ImgReceitas.astro";
+import CardReceitas from "../../components/CardReceitas.astro";
+import "../../styles/styleReceitas.css";
+---
+<LayoutReceitas titulos="Frango à Páprica">
+  <ImgReceitas
+    imagePath="/src/assets/frango-a-paprica.webp"
+    altText="frango assado"
+    carregaImg="eager"
+  />
+  <div class="div--ingr">
+    <h3>Frango à Páprica</h3>
+    <p>Cada porção tem 290 calorias.</p>
+    <h4>Ingredientes</h4>
+    <ul>
+      <li>4 pedaços de frango sem pele</li>
+      <li>1 colher (sopa) de manteiga ou margarina</li>
+      <li>½ kg de cebola bem picada</li>
+      <li>1 dente de alho amassado (opcional)</li>
+      <li>1 colher (sopa) de páprica doce</li>
+      <li>sal e pimenta-do-reino a gosto</li>
+      <li>½ xícara mais 2 colheres (sopa) de caldo de galinha quente</li>
+      <li>
+        ½ xícara mais 2 colheres (sopa) de creme de leite azedado com ½ colher
+        (sopa) de suco de limão
+      </li>
+      <li>cebolinha verde picada para enfeitar</li>
+    </ul>
+  </div>
+  <div class="div--preparo">
+    <h4>Preparo</h4>
+    <ol>
+      <li>
+        Preaqueça o forno em temperatura média (180ºC).
+      </li>
+      <li>
+        Derreta a manteiga numa panela grande. Junte a cebola e o alho, tampe e
+        frite em fogo lento por uns 45min, até que se forme um purê macio e 
+        dourado.
+      </li>
+      <li>
+        Aumente o fogo ligeiramente e polvilhe com a páprica, o sal e a 
+        pimenta-do-reino. Retire tudo da panela e coloque numa fôrma refratária.
+        Junte os pedaços de frango e vá cobrindo com o purê de cebola. Tampe a 
+        fôrma refratária ou cubra com paple alumínio e deixe assar no forno
+        moderado por 45min ou até que espetando a parte mais carnuda do frango
+        com um garfo o liquido saia transparente. Verifique a fôrma freqüentemente
+        e acrescente um pouco mais de caldo quando estiver secando.
+      </li>
+      <li>
+        Aqueça o creme de leite azedado, mas não deixe ferver. Despeje sobre o
+        frango e polvilhe com a cebolinha verde. Sirva imediatamente.
+      </li>
+    </ol>
+  </div>
+  <h4 class="Acompanhe">Acompanhe Também</h4>
+  <div class="div--outros">
+    <CardReceitas
+      imagePath="/src/assets/sardinhas-grelhadas.webp"
+      altText="peixe sardinha grelhada"
+      carregaImg="lazy"
+      name="Sardinhas Grelhadas"
+      diretorio="/receitas/sardinhas-grelhadas"
+    />
+    <CardReceitas
+      imagePath="/src/assets/cozido-de-carne-com-bolinhos.webp"
+      altText="cozido de carne"
+      carregaImg="lazy"
+      name="Cozido de Carne e Bolinhos"
+      diretorio="/receitas/cozido-de-carne-e-bolinhos"
+    />
+    <CardReceitas
+      imagePath="/src/assets/pescadinhas-com-laranja.webp"
+      altText="peixe pescadinha com laranja por cima"
+      carregaImg="lazy"
+      name="Pescadinhas com Laranja"
+      diretorio="/receitas/pescadinhas-com-laranja"
+    />
+  </div>
+</LayoutReceitas>
