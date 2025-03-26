@@ -1,0 +1,89 @@
+---
+import LayoutReceitas from "../../layouts/LayoutReceitas.astro";
+import ImgReceitas from "../../components/ImgReceitas.astro";
+import CardReceitas from "../../components/CardReceitas.astro";
+import "../../styles/styleReceitas.css"
+---
+<LayoutReceitas titulo="Enrolado de Carne">
+  <ImgReceitas
+    imagePath="/src/assets/enrolado-de-carne.webp"
+    altText="carne enrolada"
+    carregaImg="lazy"
+  />
+  <div class="div--ingr">
+    <h3>Enrolado de Carne</h3>
+    <p>Cada porção tem 511 calorias.</p>
+    <h4>Ingredientes</h4>
+    <ul>
+      <li>1 kg de capa de filé, enrolado e amarrado</li>
+      <li>1 ½ colher (sopa) de manteiga ou margarina</li>
+      <li>1 cebola cortada em quatro</li>
+      <li>2 cenouras grandes cortadas em rodelas</li>
+      <li>2 talos de salsão cortadas em rodelas</li>
+      <li>2 xícaras de caldo de carne</li>
+      <li>½ colher (chá) de tomilho seco</li>
+      <li>½ colher (chá) de manjerona seca</li>
+      <li>1 colher (sopa) de shoyu (molho de soja)</li>
+      <li>sal e pimenta-do-reino</li>
+      <li>4 colheres (chá) de maisena</li>
+    </ul>
+  </div>
+  <div class="div--preparo">
+    <h4>Preparo</h4>
+    <ol>
+      <li>
+        Derreta a margarina num fôrma refratária e frite o enrolado sobre fogo
+        forte até dourar de todos os lados. Coloque num prato.
+      </li>
+      <li>
+        Adicione a cebola, a cenoura e o salsão, diminua o fogo e frite lentamente
+        durante 5 minutos, mexendo de vez em quando. Coloque o enrolado novamente
+        na fôrma e junte o caldo, o tomilho, a manjerona, o shoyu e sal e 
+        pimenta a gosto.
+      </li>
+      <li>
+        Deixe ferver, Diminua o fogo, tampe a fôrma e cozinhe lentamente durante
+        2 horas e 30 minutos, virando a carne a cada 30min. Se for preciso, junte
+        mais caldo.
+      </li>
+      <li>
+        Quando ficar macia, retire a carne da fôrma e deixe aquecida.
+      </li>
+      <li>
+        Faça uma pasta com a maisena e um pouquinho de água, adicione à fôrma,
+        sem parar de mexer, e deixe ferver. Cozinhe lentamente por 2 a 3min,
+        mexendo sem parar. Com um amassador de batatas, amasse a cebola, a
+        cenoura e o salsão dentro da fôrma. Verifique o tempero.
+      </li>
+      <li>
+        Coloque a fôrma numa travessa aquecida e, se quiser, corte algumas fatias
+        bem finas de uma das pontas do enrolado. Derrame um pouco de molho por
+        cima e sirva imediatamente, acompanhado do molho restante numa molheira.
+      </li>
+    </ol>
+  </div>
+  <h4 class="Acompanhe">Acompanhe Também</h4>
+  <div class="div--outros">
+    <CardReceitas
+      imagePath="/src/assets/ensopado-de-carne-a-flamenga.webp"
+      altText="ensopado de carne"
+      carregaImg="lazy"
+      name="Ensopado de Cane à Flamenga"
+      diretorio="/receitas/ensopado-de-carne-a-flamenga"
+    />
+    <CardReceitas
+      imagePath="/src/assets/pescadinhas-com-laranja.webp"
+      altText="peixe pescadinha com laranja por cima"
+      carregaImg="lazy"
+      name="Pescadinhas com Laranja"
+      diretorio="/receitas/pescadinhas-com-laranja"
+    />
+    <CardReceitas
+      imagePath="/src/assets/folhados-de-peru.webp"
+      altText="salgados de peru"
+      carregaImg="lazy"
+      name="Folhados de Peru"
+      diretorio="/receitas/folhados-de-peru"
+    />
+  </div>
+</LayoutReceitas>

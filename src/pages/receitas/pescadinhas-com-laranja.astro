@@ -1,0 +1,76 @@
+---
+import LayoutReceitas from "../../layouts/LayoutReceitas.astro";
+import ImgReceitas from "../../components/ImgReceitas.astro";
+import CardReceitas from "../../components/CardReceitas.astro";
+import "../../styles/styleReceitas.css"
+---
+<LayoutReceitas titulo="Pescadinhas com Laranja">
+  <ImgReceitas
+    imagePath="/src/assets/pescadinhas-com-laranja.webp"
+    altText="peixe pescadinha com laranja por cima"
+    carregaImg="lazy"
+  />
+  <div class="div--ingr">
+    <h3>Pescadinhas com Laranja</h3>
+    <p>Cada porção tem 180 calorias.</p>
+    <h4>Ingredientes</h4>
+    <ul>
+      <li>4 pescadinhas limpas e sem espinhas</li>
+      <li>sal e pimenta-do-reino</li>
+      <li>1 ½ colher (sopa) de manteiga ou margarina</li>
+      <li>1 cebola pequena bem picada</li>
+      <li>2 colheres (chá) de mostarda</li>
+      <li>suco de 2 laranjas pequenas</li>
+      <li>1 colher (sopa) de salsinha picada (opcional)</li>
+    </ul>
+  </div>
+  <div class="div--preparo">
+    <h4>Perparo</h4>
+    <ol>
+      <li>
+        Preaqueça o forno a 200ºC. Lave as pescadinhas e seque com papel absorvente.
+        Polvilhe por dentro e por fora com sal e pimenta-do-reino.
+      </li>
+      <li>
+        Use metade da manteiga para untar uma fôrma refratária suficientemente
+        grande para acomodar as pescadinhas lado a lado. Coloque as pescadinhas
+        na fôrma.
+      </li>
+      <li>
+        Derreta a manteiga restante numa panela pequena e frite lentamente a 
+        cebola até ficar transparente. Retire do fogo e adicione a mostarda, o
+        sudo de laranja e a salsinha e misture. Derrame esta mistura sobre o 
+        peixe.
+      </li>
+      <li>
+        Cubra a fôrma com tampa ou papel de alumínio e asse no forno por 15min.
+        Retire a tampa ou o papel e asse por mais 10min ou até o peixe ficar
+        pronto.
+      </li>
+    </ol>
+  </div>
+  <h4 class="Acompanhe">Acompanhe Também</h4>
+  <div class="div--outros">
+    <CardReceitas
+      imagePath="/src/assets/frango-ao-limao-no-forno.webp"
+      altText="frango no limão"
+      carregaImg="lazy"
+      name="Frango ao Limão no Forno"
+      diretorio="/receitas/frango-ao-limao-no-forno"
+    />
+    <CardReceitas
+      imagePath="/src/assets/salada-de-frango-crocante.webp"
+      altText="salada de frango"
+      carregaImg="lazy"
+      name="Salas de Frango Crocante"
+      diretorio="/receitas/salada-de-frango-crocante"
+    />
+    <CardReceitas
+      imagePath="/src/assets/enrolado-de-carne.webp"
+      altText="carne enrolada"
+      carregaImg="lazy"
+      name="Enrolado de Carne"
+      diretorio="/receitas/enrolado-de-carne"
+    />
+  </div>
+</LayoutReceitas>

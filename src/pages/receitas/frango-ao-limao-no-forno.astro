@@ -1,0 +1,108 @@
+---
+import LayoutReceitas from "../../layouts/LayoutReceitas.astro";
+import ImgReceitas from "../../components/ImgReceitas.astro";
+import CardReceitas from "../../components/CardReceitas.astro";
+import "../../styles/styleReceitas.css";
+---
+<LayoutReceitas titulo="Frango ao Limão no Forno">
+  <ImgReceitas
+    imagePath="/src/assets/frango-ao-limao-no-forno.webp"
+    altText="frango ao limão assado"
+    carregaImg="eager"
+  />
+  <div class="div--ingr">
+    <h3>Frango ao Limão no Forno</h3>
+    <p>Cada porção tem 993 calorias.</p>
+    <h4>Ingredientes</h4>
+    <ul>
+      <li>1 ½ de frango</li>
+      <li>
+        ¾ xícara de fatias de pão de forma sem casca em migalhas ou passadas 
+        pelo liquidificador
+      </li>
+      <li>½ colher (chá) de raspas da casca de limão</li>
+      <li>sal e pimenta-do-reino a gosto</li>
+      <li>1 colher (sopa) de salsinha picada</li>
+      <li>½ colher (chá) de tomilho seco</li>
+      <li>4 colheres (sopa) de água</li>
+      <li>3 colheres (sopa) de manteiga</li>
+      <li>1 cebola grande cortada em rodelas</li>
+      <li>3 talos de salsão cortados em rodelas</li>
+      <li>3 cenouras médias cortadas em rodelas</li>
+      <li>sudo e raspas de casca de 1 limão grande</li>
+      <li>1 ½ xícara de caldo de galinha</li>
+      <li>2 colheres (sopa) de salsinha picada</li>
+      <li>3 colheres (sopa) de farinha de trigo</li>
+      <li>1 ½ colher (sopa) de manteiga ou margarina</li>
+    </ul>
+  </div>
+  <div class="div--preparo">
+    <h4>Preparo</h4>
+    <ol>
+      <li>Preaqueça o forno a 200ºC.</li>
+      <li>
+        Misture o pão com ½ colher (chá) de raspas de limão, o tomilho, sal e 
+        pimenta-do-reino a gosto e a água. Use para rechear o frango. Amarre as
+        coxas com fio ou barbante fino.
+      </li>
+      <li>
+        Derreta 3 colheres (sopa) de manteiga ou margarina numa panela grande.
+        Junte o frango e deixe dourar de todos os lados. Retire e reserve.
+      </li>
+      <li>
+        Na panela, coloque a cebola, o salsão e a cenoura e frite lentamente por
+        uns 10min até que estejam macios, mexendo de vez em quando.
+      </li>
+      <li>
+        Junte as raspas do limão grande, o sal e pimenta-do-reino a gosto. 
+        Coloque os legumes num fôrma refratária. Coloque o frango por cima.
+        Leve o caldo ao fogo e deixe levantar fervura. Despeje sobre o frango na
+        fôrma.
+      </li>
+      <li>
+        Cubra o frango com papel de alumínio e leve ao forno por 1 hora ou até 
+        que o frango esteja macio.
+      </li>
+      <li>
+        Coloque o Frango numa travessa aquecida. Coe o líquido da fôrma para uma
+        panela e reserve. Acrescente a salsinha aos legumes e disponha em volta
+        do frango. Cubra com papel de alumínio e mantenha quente.
+      </li>
+      <li>
+        Adicione o suco do limão grande ao líquido da panela e aqueça lentamente.
+        Misture 1 ½ colher (sopa) de manteiga com a farinha até obter uma pasta.
+        Acrescente ao líquido quente um pouco de cada vez, mexendo vigorosamente.
+        Ferva por 1 a 2 minutos até que engrosse, mexendo sempre. Verifique o
+        tempero.
+      </li>
+      <li>
+        Retire o papel de alumínio da travessa e despeje um pouco do molho de 
+        limão sobre o frango e sirva o molho restante num molheira.
+      </li>
+    </ol>
+  </div>
+  <h4 class="Acompanhe">Acompanhe Também</h4>
+  <div class="div--outros">
+    <CardReceitas
+      imagePath="/src/assets/frango-crocante.webp"
+      altText="frango com casquinha crocante"
+      carregaImg="lazy"
+      name="Frango Crocante"
+      diretorio="/receitas/frango-crocante"
+    />
+    <CardReceitas
+      imagePath="/src/assets/sardinhas-grelhadas.webp"
+      altText="peixe saldinha grelhada"
+      carregaImg="lazy"
+      name="Sardinhas Grelhadas"
+      diretorio="/receitas/sardinhas-grelhadas"
+    />
+    <CardReceitas
+      imagePath="/src/assets/frango-recheado-com-agriao.webp"
+      altText="frango recheado"
+      carregaImg="lazy"
+      name="Frango Recheado com Agrião"
+      diretorio="/receitas/frango-recheado-com-agriao"
+    />
+  </div>
+</LayoutReceitas>

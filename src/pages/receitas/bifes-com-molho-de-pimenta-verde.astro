@@ -1,0 +1,82 @@
+---
+import LayoutReceitas from "../../layouts/LayoutReceitas.astro";
+import ImgReceitas from "../../components/ImgReceitas.astro";
+import CardReceitas from "../../components/CardReceitas.astro";
+import "../../styles/styleReceitas.css";
+---
+<LayoutReceitas titulo="Bifes com Molho de Pimenta Verde">
+  <ImgReceitas
+    imagePath="/src/assets/bifes-com-molho-de-pimenta-verde.webp"
+    altText="bifes com molho de pimenta"
+    carregaImg="eager"
+  />
+  <div class="div--ingr">
+    <h3>Bifes com Molho de Pimenta Verde</h3>
+    <p>Cada porção tem 331 calorias.</p>
+    <h4>Ingredientes</h4>
+    <ul>
+      <li>4 bifes finos</li>
+      <li>1 colher (sopa) de óleo</li>
+      <li>1 ½ colher (sopa) de manteiga</li>
+      <li>1 cebola grande cortada em rodelas</li>
+      <li>1 colher (sopa) de pimenta-do-reino verde amassada</li>
+      <li>2 colheres (sopa) de purê de tomate</li>
+      <li>2 colheres (sopa) de catchup</li>
+      <li>¾ xícara de caldo de carne</li>
+      <li>200g (1 copinho) de iogurte natural</li>
+      <li>sal</li>
+      <li>grãos de pimenta verde inteiros para enfeitar</li>
+    </ul>
+  </div>
+  <div class="div--preparo">
+    <h4>Preparo</h4>
+    <ol>
+      <li>
+        Leve para aquecer no fogo o óleo com a manteiga numa frigideira grande.
+        Adicione a cebola e frite lentamente até que esteja macia. Retire a 
+        cebola com uma escumadeira e mantenha quente.
+      </li>
+      <li>
+        Junte os bifes e frite sobre fogo forte até que dourem dos dois lados.
+        Retire os bifes da frigideira e mantenha aquecidos.
+      </li>
+      <li>
+        Junte a pimenta verde amassada, o purê de tomate, o catchup e o caldo de
+        carne. Deixe levantar fervura. Abaixe o fogo e cozinhe lentamente po 5min.
+      </li>
+      <li>
+        Junte o iogurte e mexa. Aqueça mas não deixe ferver. Adicione sal a gosto.
+      </li>
+      <li>
+        Despeje o molho numa travessa aquecida. Disponha os bifes por cima de 
+        modo que não fiquem cobertos com o molho. Arrume algumas rodelas de 
+        cebola sobre os bifes, enfeite com os grãos de pimenta verde inteiros
+        e sirva a seguir.
+      </li>
+    </ol>
+  </div>
+  <h4 class="Acompanhe">Acompanhe Tambèm</h4>
+  <div class="div--outros">
+    <CardReceitas
+      imagePath="/src/assets/porco-com-macas.webp"
+      altText="lombo de porco com maçãs"
+      carregaImg="lazy"
+      name="Porco com Maçãs"
+      diretorio="/receitas/porco-com-macas"
+    />
+    <CardReceitas
+      imagePath="/src/assets/frango-a-paprica.webp"
+      altText="frango assado com molho de paprica"
+      carregaImg="lazy"
+      name="Frango à Páprica"
+      diretorio="/receitas/frango-a-paprica"
+    />
+    <CardReceitas
+      imagePath="/src/assets/espetinhos-de-damasco.webp"
+      altText="espetinhos de carne"
+      carregaImg="lazy"
+      name="Espetinhos com Damasco"
+      diretorio="/receitas/espetinhos-com-damasco"
+    />
+  </div>
+</LayoutReceitas>

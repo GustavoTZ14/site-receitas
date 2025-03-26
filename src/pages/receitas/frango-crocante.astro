@@ -1,0 +1,83 @@
+---
+import LayoutReceitas from "../../layouts/LayoutReceitas.astro";
+import ImgReceitas from "../../components/ImgReceitas.astro";
+import CardReceitas from "../../components/CardReceitas.astro";
+import "../../styles/styleReceitas.css"
+---
+<LayoutReceitas titulo="Frango Crocante">
+  <ImgReceitas
+    imagePath="/src/assets/frango-crocante.webp"
+    altText="frango com casquinha crocante"
+    carregaImg="lazy"
+  />
+  <div class="div--ingr">
+    <h3>Frango Crocante</h3>
+    <p>Cada porção tem 624 calorias.</p>
+    <h4>Ingredientes</h4>
+    <ul>
+      <li>1 frango cortado em 4 partes pesando 300g cada uma, aproximadamente</li>
+      <li>3 colheres (sopa) de manteiga</li>
+      <li>2 xícaras de batatinhas fritas</li>
+      <li>1 xícara de queijo parmesão ralado</li>
+      <li>1 colher (sopa) de salsinha picada</li>
+      <li>½ colher (chá) de estragão seco</li>
+      <li>1 colher (chá) de sal de alho (tempero pronto)</li>
+      <li>pimenta-do-reino a gosto</li>
+    </ul>
+  </div>
+  <div class="div--preparo">
+    <h4>Preparo</h4>
+    <ol>
+      <li>
+        Preaqueça o forno a 200ºC.
+      </li>
+      <li>
+        Retire a pele das partes do frango
+      </li>
+      <li>
+        Derreta a manteiga numa panela sobre fogo baixo. Pincele metade da 
+        manteiga derretida sobre o frango.
+      </li>
+      <li>
+        Amasse as batatinhas: coloque num saco plástico e passe o rolo de esticar
+        massa por cima.
+      </li>
+      <li>
+        Misture a batata amassada com o queijo ralado, as ervas e o sal de alho
+        e tempere a gosto com a pimenta.
+      </li>
+      <li>
+        Passe o frango nessa mistura, apertando bem. Coloque os pedaços de frango,
+        lado a lado, numa fôrma refratária.
+      </li>
+      <li>
+        Retire a manteiga restante por cima e asse no forno durante 45 a 60 min
+        até ficar bem cozido. Sirva quente.
+      </li>
+    </ol>
+  </div>
+  <h4 class="Acompanhe">Acompanhe Também</h4>
+  <div class="div--outros">
+    <CardReceitas
+      imagePath="/src/assets/macarrao-a-napolitana.webp"
+      altText="macarrão"
+      carregaImg="lazy"
+      name="Macarrão à Napolitana"
+      diretorio="/receitas/macarrao-a-napolitana"
+    />
+    <CardReceitas
+      imagePath="/src/assets/frango-frito-no-forno.webp"
+      altText="frango frito"
+      carregaImg="lazy"
+      name="Frango Frito no Forno"
+      diretorio="/receitas/frango-frito-no-forno"
+    />
+    <CardReceitas
+      imagePath="/src/assets/bifes-com-molho-de-pimenta-verde.webp"
+      altText="Bife com molho de pimenta"
+      carregaImg="lazy"
+      name="Bifes com Molho de Pimenta Verde"
+      diretorio="/receitas/bifes-com-molho-de-pimenta-verde"
+    />
+  </div>
+</LayoutReceitas>

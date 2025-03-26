@@ -1,0 +1,106 @@
+---
+import LayoutReceitas from "../../layouts/LayoutReceitas.astro";
+import ImgReceitas from "../../components/ImgReceitas.astro";
+import CardReceitas from "../../components/CardReceitas.astro";
+import "../../styles/styleReceitas.css";
+---
+<LayoutReceitas titulo="Cozido de Carne e Bolinhos">
+  <ImgReceitas
+    imagePath="/src/assets/cozido-de-carne-com-bolinhos.webp"
+    altText="cozido de carne"
+    carregaImg="eager"
+  />
+  <div class="div--ingr">
+    <h3>Cozido de Carne e Bolinhos</h3>
+    <p>Cada porção tem 695 calorias.</p>
+    <h4>Ingredientes</h4>
+    <ul>
+      <li>800g de alcatra sem gordura, cortada em cubos de 2,5cm</li>
+      <li>2 ½ colheres (sopa) de farinha de trigo</li>
+      <li>sal e pimenta-do-reino a gosto</li>
+      <li>1 ½ colher (sopa) de manteiga ou margarina</li>
+      <li>2 colheres(sopa) de óleo</li>
+      <li>1 cebola picada grosso</li>
+      <li>2 cenouras grandes cortadas em rodelas finas</li>
+      <li>2 talos de salsão picados</li>
+      <li>2 colheres (chá) de purê de tomate</li>
+      <li>2 colheres (chá) de salsinha picada</li>
+      <li>uma pitada de pimenta-do-reino</li>
+      <li>1 ¼ xícara de caldo de carne</li>
+      <li>suco de 1 laranja</li>
+    </ul>
+    <h4>Bolinhos</h4>
+    <ul>
+      <li>¾ xícara de farinha de trigo</li>
+      <li>uma pitada de sal</li>
+      <li>1 colher (chá) de fermento em pó</li>
+      <li>¼ xícara (50g) de toicinho fresco</li>
+      <li>1 colher (sopa) de salsinha bem picada</li>
+      <li>4 colheres (sopa) de água, aproximadamente</li>
+    </ul>
+  </div>
+  <div class="div--preparo">
+    <h4>Preparo</h4>
+    <ol>
+      <li>
+        Coloque a farinha, o sal e a pimenta num saco de plástico. Acrescente a
+        carne e agite o saco de plástico vigorosamente até que a carne esteja 
+        bem coberta com a farinha.
+      </li>
+      <li>
+        Aqueça a manteiga e 1 colher(sopa) de óleo numa panela. Junte a carne
+        e frite em fogo forte por uns 3min, mexendo até que doure de todos os
+        lados. Frite a carne mais vezes, se for necessário. Retire da panela
+        com uma escumadeira e reserve.
+      </li>
+      <li>
+        Coloque o óleo restante na panela e junte a cebola, a cenoura e o salsão
+        e frite em fogo médio por 3min. Coloque a carne novamente e junte o 
+        purê de tomate, a salsinha, a pimenta, o caldo e o suco de laranja.
+      </li>
+      <li>
+        Deixe levantar fervura, mexendo e raspando o fundo e os lados com uma
+        colher de pau. Abaixe o fogo, tampe e cozinhe lentamente por 1 hora e
+        30 minutos a 2 horas até que a carne esteja macia.
+      </li>
+      <li>
+        Mais ou menos 10min ante do fim do cozimento, prepare o bolinhos: peneire
+        a farinha, o fermento e o sal numa vasilha e acrescente o toicinho e a
+        salsinha. Junte a água misturando até obter uma massa macia, mas não 
+        pegajosa. Amasse levemente e forme 8 bolas.
+      </li>
+      <li>
+        Verifique o tempero do cozido de carne. Coloque os bolinhos sobre o 
+        cozido. Tampe a panela e cozinhe lentamente por 15min ou até que os
+        bolinhos estufem.
+      </li>
+      <li>
+        Sirva imediatamente da própria panela.
+      </li>
+    </ol>
+  </div>
+  <h4 class="Acompanhe">Acompanhe Também</h4>
+  <div class="div--outros">
+    <CardReceitas
+      imagePath="/src/assets/macarrao-a-napolitana.webp"
+      altText="macarrão"
+      carregaImg="lazy"
+      name="Macarrão à Napolitana"
+      diretorio="/receitas/macarrao-a-napolitana"
+    />
+    <CardReceitas
+      imagePath="/src/assets/torta-de-peixe.webp"
+      altText="torta feita com peixe"
+      carregaImg="lazy"
+      name="Torta de Peixe"
+      diretorio="/receitas/torta-de-peixe"
+    />
+    <CardReceitas
+      imagePath="/src/assets/frango-frito-no-forno.webp"
+      altText="frango frito"
+      carregaImg="lazy"
+      name="Frango Frito no Forno"
+      diretorio="/receitas/frango-frito-no-forno"
+    />
+  </div>
+</LayoutReceitas>

@@ -1,0 +1,115 @@
+---
+import LayoutReceitas from "../../layouts/LayoutReceitas.astro";
+import ImgReceitas from "../../components/ImgReceitas.astro";
+import CardReceitas from "../../components/CardReceitas.astro";
+import "../../styles/styleReceitas.css";
+---
+<LayoutReceitas titulo="Torta de Peixe">
+  <ImgReceitas
+    imagePath="/src/assets/torta-de-peixe.webp"
+    altText="torta feita com peixe"
+    carregaImg="eager"
+  />
+  <div class="div--ingr">
+    <h3>Torta de Peixe</h3>
+    <p>Cada porção tem 729 calorias.</p>
+    <h4>Ingredientes</h4>
+    <ul>
+      <li>½ kg de filé de peixe</li>
+      <li>1 ¾ xícara de leite</li>
+      <li>1 cebola pequena cortada em quatro</li>
+      <li>2 folhas de louro</li>
+      <li>4 cravos</li>
+      <li>6 grãos de pimenta-do-reino preta</li>
+      <li>1 kg de batata</li>
+      <li>sal a gosto</li>
+      <li>1 lata de seleta de legumes</li>
+      <li>4 ½ colheres (sopa) de manteiga</li>
+      <li>¹/3 xícara de leite</li>
+      <li>4 colheres (sopa) de cebolinha verde picada</li>
+      <li>2 ovos duros picados</li>
+      <li>2 colheres (sopa) de salsinha picada</li>
+      <li>pimenta-do-reino a gosto</li>
+      <li>¹/3 xícara de farinha de trigo</li>
+      <li>1 colher (sopa) de purê de tomate</li>
+      <li>3 tomates cortados em rodelas, para enfeitar</li>
+    </ul>
+  </div>
+  <div class="div--preparo">
+    <h4>Preparo</h4>
+    <ol>
+      <li>
+        Preaqueça o forno a uma temperatura baixa (150ºC).
+      </li>
+      <li>
+        Coloque os filés de peixe numa fôrma refratária e cubra com o leite. 
+        Junte a cebola cortada, as folhas de louro, os cravos e a pimenta. Cubra
+        com papel impermeável e asse por uns 20 minutos ou até que o peixe esteja
+        assado, isto é, até a sua carne ficar opaca.
+      </li>
+      <li>
+        Enquanto isso, cozinhe as batatas com casca em água temperada com sal por
+        uns 20min até que estejam cozidas. Enquanto as batatas cozinham, escorra
+        o líquido da lata de selata de legumes.
+      </li>
+      <li>
+        Quando o peixe estiver pronto, retire da fôrma e coe o líquido para uma
+        tigela. Aumente a temperatura do forno para 200ºC.
+      </li>
+      <li>
+        Escorra as batatas, descasque e amasse com 3 colheres (sopa) de manteiga
+        e o leite. Junte a cebolinha verde picada, misture muito bem e deixe a
+        mistura reservada.
+      </li>
+      <li>
+        Desfie o peixe numa vasilha, retirando eventuais pedaços de pele ou
+        espinhas. Adicione os legumes, os ovos cozidos duros e a salsinha. 
+        Tempere bem com sal e pimenta-do-reino a gosto.
+      </li>
+      <li>
+        Derreta a manteiga retante. Polvilhe com a farinha de trigo e mexa sobre
+        fogo lento por 2 minutos até que doure ligeiramente. Retire do fogo e 
+        adicione aos poucos o líquido coado do cozimento do peixe. Leve ao fogo
+        novamente e adicione o purê de tomate. Cozinhe lentamente mexendo sempre
+        até que o molho esteja grosso e liso.
+      </li>
+      <li>
+        Despeje este molho sobre a mistura de peixe e mexa cuidadosamente. 
+        Verifique o tempero.
+      </li>
+      <li>
+        Coloque a mistura de peixe com o molho numa fôrma refratária untada. 
+        Cubra por igual com o purê de batata e faça um desenho passando um garfo
+        na superfície.
+      </li>
+      <li>
+        Leve ao forno por 20 a 30min até que esteja bem quente. Enfeite com as
+        rodelas de tomate. Sirva bem quente.
+      </li>
+    </ol>
+  </div>
+  <h4 class="Acompanhe">Acompanhe Também</h4>
+  <div class="div--outros">
+    <CardReceitas
+      imagePath="/src/assets/espetinhos-de-damasco.webp"
+      altText="espetinhos de carne"
+      carregaImg="lazy"
+      name="Espetinhos com Damasco"
+      diretorio="/receitas/espetinhos-com-damasco"
+    />
+    <CardReceitas
+      imagePath="/src/assets/cozido-de-carne-com-bolinhos.webp"
+      altText="cozido de carne"
+      carregaImg="lazy"
+      name="Cozido de Carne e Bolinhos"
+      diretorio="/receitas/cozido-de-carne-e-bolinhos"
+    />
+    <CardReceitas
+      imagePath="/src/assets/robalo-com-tomate-ao-vinho-branco.webp"
+      altText="peixe robalo com vinho"
+      carregaImg="lazy"
+      name="Robalo com Tomate ao Vinho Branco"
+      diretorio="/receitas/robalo-com-tomate-ao-vinho-branco"
+    />
+  </div>
+</LayoutReceitas>
